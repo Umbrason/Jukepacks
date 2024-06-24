@@ -27,7 +27,7 @@ Then you'll have to restart the server-instance once due to a [bug](https://bugs
 Once the bug is fixed it should be enough to enable the datapack via ``/datapack enable <datapack-name>``
 
 ## How To: Acquire your Custom Discs
-#### via wandering trader:
+#### via wandering traders:
 After installing the datapack part of your Jukeþσck(s) wandering traders going to have a new trade offering a bundle, containing all the discs from one Jukeþσck.
 These Bundles only cost a single emerald as of now, but I'll probably increase the price and/or make it configurable via the Burger Menu (☰).
 
