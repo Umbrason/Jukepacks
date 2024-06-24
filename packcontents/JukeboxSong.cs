@@ -1,3 +1,4 @@
+using System.Globalization;
 using MinecraftJukeboxPackCreator.util;
 
 namespace MinecraftJukeboxPackCreator.packcontents
@@ -20,7 +21,7 @@ namespace MinecraftJukeboxPackCreator.packcontents
     ""description"": {{
       ""translate"": ""{Name}""
     }},
-    ""length_in_seconds"": {Duration:0.0},
+    ""length_in_seconds"": {Duration.ToString("0.0", CultureInfo.InvariantCulture)},
     ""sound_event"": {{
         ""sound_id"": ""minecraft:music_disc.{Name.SnakeCase()}""
         }}

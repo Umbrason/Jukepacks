@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using MinecraftJukeboxPackCreator.util;
 
@@ -68,7 +69,7 @@ namespace MinecraftJukeboxPackCreator.packcontents
                 var songFile = new FileInfo(jukeboxSongDir.FullName + $"/{song.Name.SnakeCase()}.json");
                 var output = DurationProcesses[song].output;
                 var match = Regex.Match(output, @"Duration: (\d\d:\d\d:\d\d.\d\d)");
-                song.Duration = (float)TimeSpan.Parse(match.Groups[1].Value).TotalSeconds;
+                song.Duration = (float)TimeSpan.Parse(match.Groups[1].Value, CultureInfo.InvariantCulture).TotalSeconds;
                 using var stream = songFile.CreateText();
                 stream.Write(song.JSON);
                 stream.Flush();

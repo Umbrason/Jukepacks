@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace MinecraftJukeboxPackCreator;
 
 /*
@@ -30,7 +32,6 @@ static class MinecraftJukeboxPackCreator
          - Datapack containing JSON files
          - Resourcepack containing Mono-OGG files and JSON for sound events & translation entry
         */
-
         ApplicationConfiguration.Initialize();
         Application.Run(new MainGUI());
         Settings.Save();
