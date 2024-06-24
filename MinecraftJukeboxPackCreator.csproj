@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Jukebox.gif" />
+    <EmbeddedResource Include="Jukebox_Reverse.gif" />
+    <EmbeddedResource Include="Jukebox_Spin.gif" />
+    <EmbeddedResource Include="PackIcon.png" />
+  </ItemGroup>
+
+</Project>
